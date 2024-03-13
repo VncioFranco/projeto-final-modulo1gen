@@ -5,16 +5,16 @@ private String nome;
 private int duracao;
 private String categoria;
 private int tipo;
-private int id;
+private int numero;
 
 
-public Principal(String nome, int duracao, String categoria, int tipo, int id) {
-	
+public Principal(int numero,String nome, int duracao, String categoria, int tipo) {
+	this.numero = numero;
 	this.nome = nome;
 	this.duracao = duracao;
 	this.categoria = categoria;
 	this.tipo = tipo;
-	this.id = id;
+	
 }
 public String getNome() {
 	return nome;
@@ -40,13 +40,14 @@ public int getTipo() {
 public void setTipo(int tipo) {
 	this.tipo = tipo;
 }
-public int getId() {
-	return id;
-}
-public void setId(int id) {
-	this.id = id;
-}
 
+
+public int getNumero() {
+	return numero;
+}
+public void setNumero(int numero) {
+	this.numero = numero;
+}
 public void visualizar() {
 	String tipo ="";
 	
@@ -61,7 +62,7 @@ public void visualizar() {
 	System.out.println("Duração do item: "+this.getDuracao());
 	System.out.println("Categoria do item: "+this.getCategoria());
 	System.out.println("Tipo do item: "+ tipo);
-	System.out.println("Id do item: "+ this.id);
+	System.out.println("Id do item: "+ this.numero);
 }
 
 

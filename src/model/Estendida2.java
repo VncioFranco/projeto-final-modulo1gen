@@ -2,11 +2,13 @@ package model;
 
 public class Estendida2 extends Principal {
 String diretor;
+private int numero;
 
-	public Estendida2(String nome, int duracao, String categoria, int tipo, int id, String diretor) {
-		super(nome, duracao, categoria, tipo, id);
+	public Estendida2(int numero,String nome, int duracao, String categoria, int tipo,String diretor) {
+		super(numero,nome, duracao, categoria, tipo);
 		
 		this.diretor = diretor;
+		this.numero = numero;
 		
 	}
 

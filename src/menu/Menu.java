@@ -2,12 +2,16 @@ package menu;
 
 import java.util.Scanner;
 
+
+
+
 public class Menu {
 
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
 		int opcao;
 		
+
 		while(true) {
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
@@ -19,7 +23,7 @@ public class Menu {
 			System.out.println("            2 - Listar todas os Itens               ");
 			System.out.println("            3 - Buscar Item por ID              ");
 			System.out.println("            4 - Atualizar Dados do Item             ");
-			System.out.println("            5 - Apagar item                         ");
+			System.out.println("            5 - Deletar item                         ");
 			System.out.println("            6 - Sair                                 ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
